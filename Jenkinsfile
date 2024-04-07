@@ -1,12 +1,6 @@
-#!groovy?
+#!groovy
 pipeline {
     agent any
-
-    environment {
-        // Define any environment variables needed for the pipeline
-        NODE_HOME = tool 'NodeJS'
-        PATH = "$NODE_HOME/bin:$PATH"
-    }
 
     stages {
         stage('Checkout') {
