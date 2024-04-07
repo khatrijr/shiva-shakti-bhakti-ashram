@@ -1,12 +1,18 @@
 #!groovy
 pipeline {
     agent any
+    
+    enviroment {
+        CI = 'true'
+    }
+
+    tools (nodejs 'node')
 
     stages {
         stage('Checkout') {
             steps {
                 // Checkout the source code from the Git repository
-                git 'https://github.com/khatrijr/shiva-shakti-bhakti-ashram.git'
+                git branch: 'develop', url: 'https://github.com/khatrijr/shiva-shakti-bhakti-ashram.git'
             }
         }
 
