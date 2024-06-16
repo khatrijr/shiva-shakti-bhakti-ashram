@@ -36,5 +36,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cucumber": "^6.0.7",
+    "jest": "^29.7.0",
+    "jest-cucumber": "^4.1.0",
+    "typescript": "^5.4.4"
   }
 }
